@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/app.js"></script>
+    <title>Home</title>
+</head>
+<body id="body">
+    <header class="header-navigation">
+        <div class="container">
+            <div class="logo">
+                <img src="./files/Logo.svg" alt="logo">
+                <h1>CodeZone</h1>
+            </div>
+            <nav>
+                <div>
+                    <a href="index.html">Home</a>
+                </div><div>
+                    <a href="">Linguages</a>
+                    <div class="dropdoww">
+                        <a href="./pages/linguages-Tutorials.html">Tutorials</a>
+                        <a href="./pages/linguages-Courses.html">Courses</a>
+                        <a href="./pages/linguages-Ebook.html">e-books</a>
+                    </div>
+                </div><div>
+                    <a href="./pages/sign.html" class="sign">Sign</a>
+                </div>
+            </nav>
+            <div class="hamburguer-icon" onclick="menuResponsive()">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="navigation-responsive">
+                <a href="index.html">Home</a>
+                <a href="">Linguages</a> 
+                <div class="dropdoww">
+                    <a href="./pages/linguages-Tutorials.html">Tutorials</a>
+                    <a href="./pages/linguages-Courses.html">Courses</a>
+                    <a href="./pages/linguages-Ebook.html">e-books</a>
+                </div>
+                <a href="./pages/sign.html">Sign</a>
+            </div>
+        </div>
+    </header>
+    <div class="header">
+        <header class="header-section">
+            <div class="logo-section"></div>
+            <div class="line-section"></div>
+            <div class="text-section">
+                <h1>CodeZone</h1>
+                <p> If you are prepared to start on the dark side of programming and site building type <span lang="en" class="special-start">"Start";</span> and press Enter. And if you're not ready, scroll down to convince you.</p>
+                <div class="js-input">
+                    <input type="text" id="enter" onfocus="consoleEvent()" onfocusout="consoleEventLost()" class="input-console">
+                    <script>                    
+                        const inputEle = document.getElementById('enter');
+                        inputEle.addEventListener('keyup', function(e){
+                        var key = e.which || e.keyCode;
+                        if (key == 13) { // codigo da tecla enter
+                            // colocas aqui a tua função a rodar
+                            if (this.value == "\"Start\";") {
+                                window.open("./pages/linguages-Tutorials.html","_self");
+                            } else {
+                                alert("You are not ready for this side of the force yet.");
+                                window.location.href='#foo';
+                            }
+                        }
+                        });
+                    </script>
+                    <span class="arrow-span">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </div>
+            </div>
+        </header>
+        <div class="scroll">
+            <div></div>
+        </div>
+    </div>
+    <div class="section">
+        <a href="#" id="foo"></a>
+        <div class="container">
+            <div class="box">
+                <div class="card">
+                    <h2>
+                        Who we are
+                    </h2>
+                    <p>
+                        We are a team ready to reduce your doubts and programming difficulties in different languages, focused on HTML, CSS, JS and other languages.
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>
+                        What is programming
+                    </h2>
+                    <p>
+                       A programming language is a vocabulary and set of grammar rules to instruct a computer or computing device to perform specific tasks.
+                    </p>
+                </div>
+                <div class="card">
+                   <h2>
+                        What we can offer you
+                    </h2>
+                    <p>
+                        
+A handy, easy-to-navigate site for you to dive into the dark side of the programming universe, good luck.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section2">
+        <div class="container">
+            <div class="grid-2 section-were">
+                <div>
+                    <h2>CodeZone for</h2>
+                </div>
+                <div>
+                    <ul>
+                        <li><h2>HTML</h2></li>
+                        <li><h2>CSS</h2></li>
+                        <li><h2>PhP</h2></li>
+                        <li><h2>JavaScript</h2></li>
+                        <li><h2>Ruby</h2></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="header-help">
+                <h2>We have partners of all sizes</h2>
+            </div>
+            <div class="list-help">
+                <img height="70px" src="https://www.alvinlandia.sp.gov.br/public/admin/globalarq/uploads/images/Logo_Centro_Paula_Souza.png" alt="ETESP-logo">
+                <img height="55px" src="http://www.etesaopaulo.com.br/images/ETESP_Logo.jpg" alt="CEETPS-logo">
+            </div>
+        </div>
+    </div>
+    <footer>        
+        <header class="header-footer">
+            <div class="line-section"></div>
+            <div class="container">
+                <div class="flex-container top-footer">
+                    <div> 
+                        <div class="logo">                       
+                            <img src="./files/Logo.svg" alt="logo">
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Home</h4>
+                    </div>
+                    <div>
+                        <h4>Sign</h4>
+                        <a href="./pages/sign/login.html">Login</a>
+                        <a href="./pages/sign/register.html">Register</a>
+                    </div>
+                    <div>
+                        <h4>Linguages</h4>
+                        <a href="./pages/linguages-Tutorials.html">Tutorials</a>
+                        <a href="./pages/linguages-Courses.html">Courses</a>
+                        <a href="./pages/linguages-Tutorials.html">E-books</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="footer-footer">
+            <div class="container ">
+                <div class="flex-container footer-down">
+                    <div>
+                        <nav class="terms">
+                            <a href="./pages/privacy.html">Privacy Police</a>
+                            <a href="./pages/about.html">About</a>
+                        </nav>
+                    </div>
+                    <div class="logo">
+                        <p>&copy; <span>Code</span>Zone ❤️</p>
+                    </div>
+                    <div class="social-div">
+                        <nav class="social-nav">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-github-alt"></i>
+                            </a>
+                        </nav>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

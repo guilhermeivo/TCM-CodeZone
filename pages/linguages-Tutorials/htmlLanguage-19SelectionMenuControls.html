@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <script src="../../scripts/app.js"></script>
+    <title>HTML</title>
+</head>
+<body>
+    <header class="header-navigation">
+        <div class="container">
+            <div class="logo">
+                <img src="../../files/Logo.svg" alt="logo">
+                <h1>CodeZone</h1>
+            </div>
+            <nav>
+                <div>
+                    <a href="../../index.html">Home</a>
+                </div><div>
+                    <a href="">Linguages</a>
+                    <div class="dropdoww">
+                        <a href="../linguages-Tutorials.html">Tutorials</a>
+                        <a href="../linguages-Courses.html">Courses</a>
+                        <a href="../linguages-Ebook.html">e-books</a>
+                    </div>
+                </div><div>
+                    <a href="../sign.html" class="sign">Sign</a>
+                </div>
+            </nav>
+            <div class="hamburguer-icon" onclick="menuResponsive()">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="navigation-responsive">
+                <a href="../../index.html">Home</a>
+                <a href="">Linguages</a> 
+                <div class="dropdoww">
+                    <a href="../linguages-Tutorials.html">Tutorials</a>
+                    <a href="../linguages-Courses.html">Courses</a>
+                    <a href="../linguages-Ebook.html">e-books</a>
+                </div>
+                <a href="../sign.html">Sign</a>
+            </div>
+        </div>
+    </header>
+    <div class="section">
+        <div class="container">
+            <main class="content">
+                <div class="content-title">
+                    <div class="content-banner">
+                        <div class="content-banner__icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="content-banner__body">
+                            <h2>HTML Linguages</h2>
+                        </div>
+                    </div>
+
+                    <div class="content-banner__description">
+                        <p>The HTML programming language can be divided into three main parts: Intruducion, HTMl5, Html others code.</p>
+                    </div>
+                </div>
+                <section class="content-layout row documentation">
+                    <div class="first-column">
+                        <div class="sidebar-nav">
+                            <ul class="documentation-page-nav">
+                                <li class="has-submenu">
+                                    <div class="bullet-icon">
+                                        <span class="icon"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                    <a href="#">
+                                        HTML Tutorial
+                                    </a>
+                                    <ul class="reference-menu">
+                                        <li>
+                                            <a href="./htmlLanguage.html#Introducion">Introducion</a>
+                                        </li>
+                                        <li>
+                                            <a href="./htmlLanguage.html#HTML5">HTML5</a>
+                                        </li>
+                                        <li>
+                                            <a href="./htmlLanguage.html#HTMLCodes">HTML others code</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="bullet-icon">
+                                        <span class="icon"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                    <a href="./htmlLanguage-Glossary.html">
+                                        Glossary
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="licence">
+                                <p>                                    
+                                    Found anything that could be improved? Suggest corrections and new documentation via GitHub.
+                                </p>
+                                <p>                                    
+                                    Questions on how to use Github? Learn everything you need to know in this tutorial.  
+                                </p>
+                            </div>
+                            <div class="update">
+                                <p>
+                                    Last Update: 15/11/2019
+                                </p>
+                                <a href="#">                                    
+                                    Edit this page
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-page"> 
+                    <!--  ███████████████████████████████████████████████████████████████████████████████ 
+                                                        Documentação
+                          ███████████████████████████████████████████████████████████████████████████████ -->
+                        <h3>Selection Menu Controls</h3>
+                        <p></p>
+                        <br>
+                        <a href="./htmlLanguage-19SelectionMenuControls.html#SelectMenu" id="SelectMenu"></a>
+                        <h4> Select Menu </h4>
+                        <p>The <span class="special">&lt;select&gt;</span> element generates a drop-down menu from which the user can choose an option.</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;select</span> name=""<span class="hljs-built_in">&gt;</span>
+    <span class="hljs-built_in">&lt;option</span> value="1"<span class="hljs-built_in">&gt;</span> One <span class="hljs-built_in">&lt;/option&gt;</span>
+    <span class="hljs-built_in">&lt;option</span> value="2"<span class="hljs-built_in">&gt;</span> Two <span class="hljs-built_in">&lt;/option&gt;</span>
+    <span class="hljs-built_in">&lt;option</span> value="3"<span class="hljs-built_in">&gt;</span> Three <span class="hljs-built_in">&lt;/option&gt;</span>
+    <span class="hljs-built_in">&lt;option</span> value="4"<span class="hljs-built_in">&gt;</span> Four <span class="hljs-built_in">&lt;/option&gt;</span>   
+<span class="hljs-built_in">&lt;/select&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>You can change the size of the selection menu with the size attribute. A size of 0 or 1 displays the standard dropdown style menu. A size greater than 1 will convert the drop-down into a box displaying that many lines, with one option per line and a scrollbar in order to scroll through the available options.</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;select</span> name="" size="4"<span class="hljs-built_in">&gt;</span><span class="hljs-built_in">&lt;/select&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>By default, users can only select a single option. Adding the multiple attribute allows users to select multiple options at once and submit all selected options with the form. Using the multiple attribute automatically converts the drop-down menu into a box as if it had a size defined. The default size when this occurs is determined by the specific browser you are using, and it is not possible to change it back to a drop-down style menu while allowing multiple selections.</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;select</span> name="" multiple<span class="hljs-built_in">&gt;</span><span class="hljs-built_in">&lt;/select&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>When using the multiple attribute, there is a difference between using 0 and 1 for the size, whereas no difference exists when not using the attribute. Using 0 will cause the browser to behave in whatever default manner it is programmed to do. Using 1 will explicitly set the size of the resulting box to only one row high.</p>
+
+                        <a href="./htmlLanguage-19SelectionMenuControls.html#Options" id="Options"></a>
+                        <h4> Options </h4>
+                        <p>The options inside a selection menu are what the user will be selection. The normal syntax for an option is as follows:</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;option&gt;</span> Some Option <span class="hljs-built_in">&lt;/option&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>However, it's important to note that the text inside the <span class="special">&lt;option&gt;</span> element itself is not always used, and essentially becomes the default value for attributes which are not specified.</p>
+                        <p>The attributes which control the actual appearance and function of the option are value and label. The label represents the text which will be displayed in the drop-down menu (what you're looking at and will click on to select it). The value represents the text which will be sent along with form submission. If either of these values is omitted, it uses the text inside the element as the value instead. So the example we gave above could be "expanded" to this:</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;option</span> label="Some Option" value="Some Option"<span class="hljs-built_in">&gt;</span><span class="hljs-built_in">&lt;/option&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>Note the omission of the inside text and end tag, which are not required to actually construct an option inside the menu. If they were included, the inside text would be ignored because both attributes are already specified and the text is not needed. However, you probably won't see a lot of people writing them this way. The most common way it's written is with a value that will be sent to the server, along with the inside text which eventually becomes the label attribute, like so:</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;option</span> value="option1"<span class="hljs-built_in">&gt;</span> Some Option <span class="hljs-built_in">&lt;/option&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>You can also specify a certain option to be selected in the menu by default by attaching the selected attribute to it. By default, if no option is specified as selected in the menu, the first option in the menu will be selected when rendered. If more than one option has the selected attribute attached, then the last option present in the menu with the attribute will be the one selected by default.</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;option</span> value="option1" selected<span class="hljs-built_in">&gt;</span> Some Option <span class="hljs-built_in">&lt;/option&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>If you're using the attribute in a multi-option selection menu, then all the options with the attribute will be selected by default, and none will be selected if no options have the attribute.</p>
+
+                        <a href="./htmlLanguage-19SelectionMenuControls.html#OptionGroups" id="OptionGroups"></a>
+                        <h4> Option Groups </h4>
+                        <p>You can neatly group your options within a selection menu in order to provide a more structured layout in a long list of options by using the <span class="special">&lt;optgroup&gt;</span> element.</p>
+                        <p>The syntax is very basic, by simply using the element with a label attribute to identify the title for the group, and containing zero or more options that should be within that group.</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;select</span> name=""<span class="hljs-built_in">&gt;</span>
+    <span class="hljs-built_in">&lt;option</span> value="milk"<span class="hljs-built_in">&gt;</span> milk <span class="hljs-built_in">&lt;/option&gt;</span>
+    <span class="hljs-built_in">&lt;optgroup</span> label="Fruits"<span class="hljs-built_in">&gt;</span>
+        <span class="hljs-built_in">&lt;option</span> value="banana"<span class="hljs-built_in">&gt;</span> Banana <span class="hljs-built_in">&lt;/option&gt;</span>
+        <span class="hljs-built_in">&lt;option</span> value="strawberry"<span class="hljs-built_in">&gt;</span> Strawberry <span class="hljs-built_in">&lt;/option&gt;</span>
+    <span class="hljs-built_in">&lt;/optgroup&gt;</span>
+    <span class="hljs-built_in">&lt;optgroup</span> label="Vegetables" disabled<span class="hljs-built_in">&gt;</span>
+        <span class="hljs-built_in">&lt;option</span> value="carrot"<span class="hljs-built_in">&gt;</span> Carrot <span class="hljs-built_in">&lt;/option&gt;</span>
+        <span class="hljs-built_in">&lt;option</span> value="zucchini"<span class="hljs-built_in">&gt;</span> Zucchini <span class="hljs-built_in">&lt;/option&gt;</span>
+    <span class="hljs-built_in">&lt;/optgroup&gt;</span>
+<span class="hljs-built_in">&lt;/select&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>When using option groups, not all options need to be contained within a group. As well, disabling an option group will disable all options within the group, and it is not possible to manually re-enable a single option within a disabled group.</p>
+
+                        <a href="./htmlLanguage-19SelectionMenuControls.html#Datalist" id="Datalist"></a>
+                        <h4> Datalist </h4>
+                        <p>The <span class="special">&lt;datalist&gt;</span> tag specifies a list of pre-defined options for an <span class="special">&lt;input&gt;</span> element. It provide an "autocomplete" feature on <span class="special">&lt;input&gt;</span> elements. Users will see a drop-down list of options as they write.</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;input</span> list="Languages"<span class="hljs-built_in">&gt;</span>
+<span class="hljs-built_in">&lt;datalist</span> id="Languages"<span class="hljs-built_in">&gt;</span>
+    <span class="hljs-built_in">&lt;option</span> value="PHP"<span class="hljs-built_in">&gt;</span>
+    <span class="hljs-built_in">&lt;option</span> value="Perl"<span class="hljs-built_in">&gt;</span>
+    <span class="hljs-built_in">&lt;option</span> value="Python"<span class="hljs-built_in">&gt;</span>
+    <span class="hljs-built_in">&lt;option</span> value="Ruby"<span class="hljs-built_in">&gt;</span>
+    <span class="hljs-built_in">&lt;option</span> value="C++"<span class="hljs-built_in">&gt;</span>
+<span class="hljs-built_in">&lt;/datalist&gt;</span>
+</code></pre>
+                        </div>
+
+                    </div> 
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer>        
+        <header class="header-footer">
+            <div class="line-section"></div>
+            <div class="container">
+                <div class="flex-container top-footer">
+                    <div> 
+                        <div class="logo">                       
+                            <img src="../../files/Logo.svg" alt="logo">
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Home</h4>
+                    </div>
+                    <div>
+                        <h4>Sign</h4>
+                        <a href="../sign/login.html">Login</a>
+                        <a href="../sign/register.html">Register</a>
+                    </div>
+                    <div>
+                        <h4>Linguages</h4>
+                        <a href="../linguages-Tutorials.html">Tutorials</a>
+                        <a href="../linguages-Courses.html">Courses</a>
+                        <a href="../linguages-Ebook.html">E-books</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="footer-footer">
+            <div class="container ">
+                <div class="flex-container footer-down">
+                    <div>
+                        <nav class="terms">
+                            <a href="../privacy.html">Privacy Police</a>
+                        </nav>
+                    </div>
+                    <div class="logo">
+                        <p>&copy; <span>Code</span>Zone</p>
+                    </div>
+                    <div class="social-div">
+                        <nav class="social-nav">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-github-alt"></i>
+                            </a>
+                        </nav>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

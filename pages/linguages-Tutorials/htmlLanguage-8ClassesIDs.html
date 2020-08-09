@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <script src="../../scripts/app.js"></script>
+    <title>HTML</title>
+</head>
+<body>
+    <header class="header-navigation">
+        <div class="container">
+            <div class="logo">
+                <img src="../../files/Logo.svg" alt="logo">
+                <h1>CodeZone</h1>
+            </div>
+            <nav>
+                <div>
+                    <a href="../../index.html">Home</a>
+                </div><div>
+                    <a href="">Linguages</a>
+                    <div class="dropdoww">
+                        <a href="../linguages-Tutorials.html">Tutorials</a>
+                        <a href="../linguages-Courses.html">Courses</a>
+                        <a href="../linguages-Ebook.html">e-books</a>
+                    </div>
+                </div><div>
+                    <a href="../sign.html" class="sign">Sign</a>
+                </div>
+            </nav>
+            <div class="hamburguer-icon" onclick="menuResponsive()">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="navigation-responsive">
+                <a href="../../index.html">Home</a>
+                <a href="">Linguages</a> 
+                <div class="dropdoww">
+                    <a href="../linguages-Tutorials.html">Tutorials</a>
+                    <a href="../linguages-Courses.html">Courses</a>
+                    <a href="../linguages-Ebook.html">e-books</a>
+                </div>
+                <a href="../sign.html">Sign</a>
+            </div>
+        </div>
+    </header>
+    <div class="section">
+        <div class="container">
+            <main class="content">
+                <div class="content-title">
+                    <div class="content-banner">
+                        <div class="content-banner__icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="content-banner__body">
+                            <h2>HTML Linguages</h2>
+                        </div>
+                    </div>
+
+                    <div class="content-banner__description">
+                        <p>The HTML programming language can be divided into three main parts: Intruducion, HTMl5, Html others code.</p>
+                    </div>
+                </div>
+                <section class="content-layout row documentation">
+                    <div class="first-column">
+                        <div class="sidebar-nav">
+                            <ul class="documentation-page-nav">
+                                <li class="has-submenu">
+                                    <div class="bullet-icon">
+                                        <span class="icon"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                    <a href="#">
+                                        HTML Tutorial
+                                    </a>
+                                    <ul class="reference-menu">
+                                        <li>
+                                            <a href="./htmlLanguage.html#Introducion">Introducion</a>
+                                        </li>
+                                        <li>
+                                            <a href="./htmlLanguage.html#HTML5">HTML5</a>
+                                        </li>
+                                        <li>
+                                            <a href="./htmlLanguage.html#HTMLCodes">HTML others code</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="bullet-icon">
+                                        <span class="icon"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                    <a href="./htmlLanguage-Glossary.html">
+                                        Glossary
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="licence">
+                                <p>                                    
+                                    Found anything that could be improved? Suggest corrections and new documentation via GitHub.
+                                </p>
+                                <p>                                    
+                                    Questions on how to use Github? Learn everything you need to know in this tutorial.  
+                                </p>
+                            </div>
+                            <div class="update">
+                                <p>
+                                    Last Update: 15/11/2019
+                                </p>
+                                <a href="#">                                    
+                                    Edit this page
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-page"> 
+                    <!--  ███████████████████████████████████████████████████████████████████████████████ 
+                                                        Documentação
+                          ███████████████████████████████████████████████████████████████████████████████ -->
+                        <h3>Classes and IDs</h3>
+                        <p>Classes and IDs make referencing HTML elements from scripts and stylesheets easier. The class attribute can be used on one or more tags and is used by CSS for styling. IDs however are intended to refer to a single element, meaning the same ID should never be used twice. IDs are generally used with JavaScript and internal document links, and are discouraged in CSS. This topic contains helpful explanations and examples regarding proper usage of class and ID attributes in HTML.</p>
+                        <br>
+                        <a href="./htmlLanguage-8ClassesIDs.html#GivingClass" id="GivingClass"></a>
+                        <h4>Giving an element a class</h4>
+                        <p>Classes are identifiers for the elements that they are assigned to. Use the class attribute to assign a class to an element.</p>
+                        
+                        <div class="listingblock">
+                                <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;div</span> class="example-class"<span class="hljs-built_in">&gt;</span> <span class="hljs-built_in">&lt;/div&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>To assign multiple classes to an element, separate the class names with spaces.</p>
+
+                        <div class="listingblock">
+                                <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;div</span> class="class1 class2"<span class="hljs-built_in">&gt;</span> <span class="hljs-built_in">&lt;/div&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>Classes can be used for styling certain elements without changing all elements of that kind. For example, these two span elements can have completely different stylings:</p>
+
+                        <div class="listingblock">
+                                <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;span&gt;</span> <span class="hljs-built_in">&lt;/span&gt;</span>
+<span class="hljs-built_in">&lt;span</span> class="special"<span class="hljs-built_in">&gt;</span> <span class="hljs-built_in">&lt;/span&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>Classes of the same name can be given to any number of elements on a page and they will all receive the styling associated with that class. This will always be true unless you specify the element within the CSS.</p>
+                        <p>For example, we have two elements, both with the class highlight:</p>
+
+                        <div class="listingblock">
+                                <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;div</span> class="highlight"<span class="hljs-built_in">&gt;</span> Lorem, ipsum. <span class="hljs-built_in">&lt;/div&gt;</span>
+<span class="hljs-built_in">&lt;span</span> class="highlight"<span class="hljs-built_in">&gt;</span> Lorem, ipsum. <span class="hljs-built_in">&lt;/span&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>If our CSS is as below, then the color green will be applied to the text within both elements:</p>
+
+                        <div class="listingblock">
+                                <pre class="highlight">
+<code class="language-html hljs" data-lang="css">.highlight <span class="hljs-built_in">{</span>
+    color: green;
+<span class="hljs-built_in">}</span>
+</code></pre>
+                        </div>
+
+                        <p>However, if we only want to target div's with the class highlight then we can add specificity like below:</p>
+
+                        <div class="listingblock">
+                                <pre class="highlight">
+<code class="language-html hljs" data-lang="css">div.highlight <span class="hljs-built_in">{</span>
+    color: green;
+<span class="hljs-built_in">}</span>
+</code></pre>
+                        </div>
+
+                        <p>Nevertheless, when styling with CSS, it is generally recommended that only classes (e.g. .highlight) be used rather than elements with classes (e.g. div.highlight).</p>
+                        <p>As with any other selector, classes can can be nested:</p>
+
+                        <div class="listingblock">
+                                <pre class="highlight">
+<code class="language-html hljs" data-lang="css">.main .highlight <span class="hljs-built_in">{</span>
+    color: red;
+<span class="hljs-built_in">}</span>
+<span class="hljs-comment">/* Descendant combinator */</span>
+</code></pre>
+                        </div>
+
+                        <div class="listingblock">
+                                <pre class="highlight">
+<code class="language-html hljs" data-lang="css">.footer > .highlight <span class="hljs-built_in">{</span>
+    color: blue;
+<span class="hljs-built_in">}</span>
+<span class="hljs-comment">/* Child combinator */</span>
+</code></pre>
+                        </div>
+
+                        <p>You can also chain the class selector to only select elements that have a combination of several classes. For example, if this is our HTML:</p>
+
+                        <div class="listingblock">
+                                <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;div</span> class="special left menu"<span class="hljs-built_in">&gt;</span> This text will be pink <span class="hljs-built_in">&lt;/div&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>And we want to colour this specific piece of text pink, we can do the following in our CSS:</p>
+
+                        <div class="listingblock">
+                                <pre class="highlight">
+<code class="language-html hljs" data-lang="css">special.left.menu <span class="hljs-built_in">{</span>
+    color: pink;
+<span class="hljs-built_in">}</span>
+</code></pre>
+                        </div>
+
+                        <a href="./htmlLanguage-8ClassesIDs.html#GivingID" id="GivingID"></a>
+                        <h4>Giving an element an ID</h4>
+                        <p>The ID attribute of an element is an identifier which must be unique in the whole document. Its purpose is to uniquely identify the element when linking (using an anchor), scripting, or styling (with CSS).</p>
+
+                        <div class="listingblock">
+                                <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;div</span> id="example-id"<span class="hljs-built_in">&gt;</span> <span class="hljs-built_in">&lt;/div&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>You should not have two elements with the same ID in the same document, even if the attributes are attached to two different kinds of elements. For example, the following code is incorrect:</p>
+
+                        <div class="listingblock">
+                                <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;span</span> id="example-id"<span class="hljs-built_in">&gt;</span> <span class="hljs-built_in">&lt;/span&gt;</span>
+<span class="hljs-built_in">&lt;div</span> id="example-id"<span class="hljs-built_in">&gt;</span> <span class="hljs-built_in">&lt;/div&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>Browsers will do their best to render this code, but unexpected behavior may occur when styling with CSS or adding functionality with JavaScript.</p>
+                        <p>To reference elements by their ID in CSS, prefix the ID with #.</p>
+
+                        <div class="listingblock">
+                                <pre class="highlight">
+<code class="language-html hljs" data-lang="css">#example-id <span class="hljs-built_in">{</span>
+    color: green;
+<span class="hljs-built_in">}</span>
+</code></pre>
+                        </div>
+
+                        <p>To jump to an element with an ID on a given page, append # with the element name in the URL</p>
+
+                        <div class="listingblock">
+                                <pre class="highlight">
+<code class="language-html hljs" data-lang="html">http://example.com/about#example-id
+</code></pre>
+                        </div>
+
+                        <p>This feature is supported in most browsers and does not require additional JavaScript or CSS to work.</p>
+
+                        <a href="./htmlLanguage-8ClassesIDs.html#AcceptableValues" id="AcceptableValues"></a>
+                        <h4>Acceptable Values</h4>
+                        <p>So the value can be all digits, just one digit, just punctuation characters, include special characters, whatever. Just no whitespace.</p>
+                        <p>So these are valid</p>
+
+                        <div class="listingblock">
+                                <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;div</span> id="container"<span class="hljs-built_in">&gt;</span> ... <span class="hljs-built_in">&lt;/div&gt;</span>
+<span class="hljs-built_in">&lt;div</span> id="999"<span class="hljs-built_in">&gt;</span> ... <span class="hljs-built_in">&lt;/div&gt;</span>
+<span class="hljs-built_in">&lt;div</span> id="#%LV-||"<span class="hljs-built_in">&gt;</span> ... <span class="hljs-built_in">&lt;/div&gt;</span>
+<span class="hljs-built_in">&lt;div</span> id="____V"<span class="hljs-built_in">&gt;</span> ... <span class="hljs-built_in">&lt;/div&gt;</span>
+<span class="hljs-built_in">&lt;div</span> id="⌘⌥"<span class="hljs-built_in">&gt;</span> ... <span class="hljs-built_in">&lt;/div&gt;</span>
+<span class="hljs-built_in">&lt;div</span> id="♥"<span class="hljs-built_in">&gt;</span> ... <span class="hljs-built_in">&lt;/div&gt;</span>
+<span class="hljs-built_in">&lt;div</span> id="{}"<span class="hljs-built_in">&gt;</span> ... <span class="hljs-built_in">&lt;/div&gt;</span>
+<span class="hljs-built_in">&lt;div</span> id="©"<span class="hljs-built_in">&gt;</span> ... <span class="hljs-built_in">&lt;/div&gt;</span>
+<span class="hljs-built_in">&lt;div</span> id="♤₩¤☆€~¥"<span class="hljs-built_in">&gt;</span> ... <span class="hljs-built_in">&lt;/div&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>This is invalid:</p>
+
+                        <div class="listingblock">
+                                <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;div</span> id=" "<span class="hljs-built_in">&gt;</span> ... <span class="hljs-built_in">&lt;/div&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>This is also invalid, when included in the same document:</p>
+                        
+                        <div class="listingblock">
+                                <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;div</span> id="results"<span class="hljs-built_in">&gt;</span> ... <span class="hljs-built_in">&lt;/div&gt;</span>
+<span class="hljs-built_in">&lt;div</span> id="results"<span class="hljs-built_in">&gt;</span> ... <span class="hljs-built_in">&lt;/div&gt;</span>
+</code></pre>
+                        </div>
+
+                    </div> 
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer>        
+        <header class="header-footer">
+            <div class="line-section"></div>
+            <div class="container">
+                <div class="flex-container top-footer">
+                    <div> 
+                        <div class="logo">                       
+                            <img src="../../files/Logo.svg" alt="logo">
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Home</h4>
+                    </div>
+                    <div>
+                        <h4>Sign</h4>
+                        <a href="../sign/login.html">Login</a>
+                        <a href="../sign/register.html">Register</a>
+                    </div>
+                    <div>
+                        <h4>Linguages</h4>
+                        <a href="../linguages-Tutorials.html">Tutorials</a>
+                        <a href="../linguages-Courses.html">Courses</a>
+                        <a href="../linguages-Ebook.html">E-books</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="footer-footer">
+            <div class="container ">
+                <div class="flex-container footer-down">
+                    <div>
+                        <nav class="terms">
+                            <a href="../privacy.html">Privacy Police</a>
+                        </nav>
+                    </div>
+                    <div class="logo">
+                        <p>&copy; <span>Code</span>Zone</p>
+                    </div>
+                    <div class="social-div">
+                        <nav class="social-nav">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-github-alt"></i>
+                            </a>
+                        </nav>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <script src="../../scripts/app.js"></script>
+    <title>HTML</title>
+</head>
+<body>
+    <header class="header-navigation">
+        <div class="container">
+            <div class="logo">
+                <img src="../../files/Logo.svg" alt="logo">
+                <h1>CodeZone</h1>
+            </div>
+            <nav>
+                <div>
+                    <a href="../../index.html">Home</a>
+                </div><div>
+                    <a href="">Linguages</a>
+                    <div class="dropdoww">
+                        <a href="../linguages-Tutorials.html">Tutorials</a>
+                        <a href="../linguages-Courses.html">Courses</a>
+                        <a href="../linguages-Ebook.html">e-books</a>
+                    </div>
+                </div><div>
+                    <a href="../sign.html" class="sign">Sign</a>
+                </div>
+            </nav>
+            <div class="hamburguer-icon" onclick="menuResponsive()">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="navigation-responsive">
+                <a href="../../index.html">Home</a>
+                <a href="">Linguages</a> 
+                <div class="dropdoww">
+                    <a href="../linguages-Tutorials.html">Tutorials</a>
+                    <a href="../linguages-Courses.html">Courses</a>
+                    <a href="../linguages-Ebook.html">e-books</a>
+                </div>
+                <a href="../sign.html">Sign</a>
+            </div>
+        </div>
+    </header>
+    <div class="section">
+        <div class="container">
+            <main class="content">
+                <div class="content-title">
+                    <div class="content-banner">
+                        <div class="content-banner__icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="content-banner__body">
+                            <h2>HTML Linguages</h2>
+                        </div>
+                    </div>
+
+                    <div class="content-banner__description">
+                        <p>The HTML programming language can be divided into three main parts: Intruducion, HTMl5, Html others code.</p>
+                    </div>
+                </div>
+                <section class="content-layout row documentation">
+                    <div class="first-column">
+                        <div class="sidebar-nav">
+                            <ul class="documentation-page-nav">
+                                <li class="has-submenu">
+                                    <div class="bullet-icon">
+                                        <span class="icon"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                    <a href="#">
+                                        HTML Tutorial
+                                    </a>
+                                    <ul class="reference-menu">
+                                        <li>
+                                            <a href="./htmlLanguage.html#Introducion">Introducion</a>
+                                        </li>
+                                        <li>
+                                            <a href="./htmlLanguage.html#HTML5">HTML5</a>
+                                        </li>
+                                        <li>
+                                            <a href="./htmlLanguage.html#HTMLCodes">HTML others code</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="bullet-icon">
+                                        <span class="icon"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                    <a href="./htmlLanguage-Glossary.html">
+                                        Glossary
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="licence">
+                                <p>                                    
+                                    Found anything that could be improved? Suggest corrections and new documentation via GitHub.
+                                </p>
+                                <p>                                    
+                                    Questions on how to use Github? Learn everything you need to know in this tutorial.  
+                                </p>
+                            </div>
+                            <div class="update">
+                                <p>
+                                    Last Update: 15/11/2019
+                                </p>
+                                <a href="#">                                    
+                                    Edit this page
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-page"> 
+                    <!--  ███████████████████████████████████████████████████████████████████████████████ 
+                                                        Documentação
+                          ███████████████████████████████████████████████████████████████████████████████ -->
+                        <h3>Lists</h3>
+                        <p>HTML offers three ways for specifying lists: ordered lists, unordered lists, and description lists. Ordered lists use ordinal sequences to indicate the order of list elements, unordered lists use a defined symbol such as a bullet to list elements in no designated order, and description lists use indents to list elements with their children. This topic explains the implementation and combination of these lists in HTML markup.</p>
+                        <br>
+                        <a href="./htmlLanguage-5Lists.html#OrderedList" id="OrderedList"></a>
+                        <h4>Ordered List</h4>
+                        <p>An ordered list can be created with the <span class="special">&lt;ol&gt;</span> tag and each list item can be created with the <span class="special">&lt;li&gt;</span> tag as in the example below:</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;ol&gt;</span>
+    <span class="hljs-built_in">&lt;li&gt;</span> Item <span class="hljs-built_in">&lt;/li&gt;</span>
+    <span class="hljs-built_in">&lt;li&gt;</span> Another Item <span class="hljs-built_in">&lt;/li&gt;</span>
+    <span class="hljs-built_in">&lt;li&gt;</span> Yet Another Item <span class="hljs-built_in">&lt;/li&gt;</span>
+<span class="hljs-built_in">&lt;/ol&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>There are a couple of ways you can play with which numbers appear on the list items in an ordered list. The first way is to set a starting number, using the start attribute. The list will start at this defined number, and continue incrementing by one as usual.</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;ol</span> start="3"<span class="hljs-built_in">&gt;</span>
+    <span class="hljs-built_in">&lt;li&gt;</span> Item <span class="hljs-built_in">&lt;/li&gt;</span>
+    <span class="hljs-built_in">&lt;li&gt;</span> Another Item <span class="hljs-built_in">&lt;/li&gt;</span>
+    <span class="hljs-built_in">&lt;li&gt;</span> Yet Another Item <span class="hljs-built_in">&lt;/li&gt;</span>
+<span class="hljs-built_in">&lt;/ol&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>This will produce a numbered list (which is the default style):</p>
+                        <p>You can also explicitly set a certain list item to a specific number. Further list items after one with a specified value will continue incrementing by one from that list item's value, ignoring where the parent list was at.</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;li</span> value="7"<span class="hljs-built_in">&gt;</span> <span class="hljs-built_in">&lt;li&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>It is also worth noting that, by using the value attribute directly on a list item, you can override an ordered list's existing numbering system by restarting the numbering at a lower value. So if the parent list was already up to value 7, and encountered a list item at value 4, then that list item would still display as 4 and continue counting from that point again.</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;ol</span> start="5"<span class="hljs-built_in">&gt;</span>
+    <span class="hljs-built_in">&lt;li&gt;</span> Item <span class="hljs-built_in">&lt;/li&gt;</span>
+    <span class="hljs-built_in">&lt;li&gt;</span> Some Other Item <span class="hljs-built_in">&lt;/li&gt;</span>
+    <span class="hljs-built_in">&lt;li</span> value="4"<span class="hljs-built_in">&gt;</span> A Reset Item <span class="hljs-built_in">&lt;/li&gt;</span>
+    <span class="hljs-built_in">&lt;li&gt;</span> Yet Another Item <span class="hljs-built_in">&lt;/li&gt;</span>
+<span class="hljs-built_in">&lt;/ol&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>So the example above will produce a list that follows the numbering pattern of 5, 6, 4, 5, 6 - starting again at a number lower than the previous and duplicating the number 6 in the list.</p>
+                        <p><b>Note:</b> The start and value attributes only accept a number - even if the ordered list is set to display as Roman numerals or letters.</p>
+                        <p>You can reverse the numbering by adding reversed in your ol element:</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;ol</span> reversed<span class="hljs-built_in">&gt;</span>
+    <span class="hljs-built_in">&lt;li&gt;</span> Item <span class="hljs-built_in">&lt;/li&gt;</span>
+    <span class="hljs-built_in">&lt;li&gt;</span> Some Other Item <span class="hljs-built_in">&lt;/li&gt;</span>
+    <span class="hljs-built_in">&lt;li</span> value="4"<span class="hljs-built_in">&gt;</span> A Reset Item <span class="hljs-built_in">&lt;/li&gt;</span>
+    <span class="hljs-built_in">&lt;li&gt;</span> Yet Another Item <span class="hljs-built_in">&lt;/li&gt;</span>
+<span class="hljs-built_in">&lt;/ol&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>Reverse numbering is helpful if you're continually adding to a list, such as with new podcast episodes or presentations, and you want the most recent items to appear first.</p>
+                        <p>You can easily change the type of numeral shown in the list item marker by using the type attribute</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;ol</span> type="1|a|A|i|I"<span class="hljs-built_in">&gt;</span>
+</code></pre>
+                        </div>
+                        
+                        <a href="./htmlLanguage-5Lists.html#UnorderedList" id="UnorderedList"></a>
+                        <h4>Unordered List</h4>
+                        <p>An unordered list can be created with the <span class="special">&lt;ul&gt;</span> tag and each list item can be created with the <span class="special">&lt;li&gt;</span> tag as shown by the example below:</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;ul&gt;</span>
+    <span class="hljs-built_in">&lt;li&gt;</span> Item <span class="hljs-built_in">&lt;/li&gt;</span>
+    <span class="hljs-built_in">&lt;li&gt;</span> Another Item <span class="hljs-built_in">&lt;/li&gt;</span>
+    <span class="hljs-built_in">&lt;li&gt;</span> Yet Another Item <span class="hljs-built_in">&lt;/li&gt;</span>
+<span class="hljs-built_in">&lt;/ul&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>This will produce a bulleted list (which is the default style):</p>
+
+                        <a href="./htmlLanguage-5Lists.html#Nestedlists" id="Nestedlists"></a>
+                        <h4>Nested lists</h4>
+                        <p>You can nest lists to represent sub-items of a list item.</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;ul&gt;</span>
+    <span class="hljs-built_in">&lt;li&gt;</span> Item 1 <span class="hljs-built_in">&lt;/li&gt;</span>
+    <span class="hljs-built_in">&lt;li&gt;</span> Item 2 
+        <span class="hljs-built_in">&lt;ul&gt;</span>
+            <span class="hljs-built_in">&lt;li&gt;</span> sub-Item 2.1 <span class="hljs-built_in">&lt;/li&gt;</span>
+            <span class="hljs-built_in">&lt;li&gt;</span> sub-Item 2.2 <span class="hljs-built_in">&lt;/li&gt;</span>
+        <span class="hljs-built_in">&lt;/ul&gt;</span>
+    <span class="hljs-built_in">&lt;/li&gt;</span>
+    <span class="hljs-built_in">&lt;li&gt;</span> Item 3 <span class="hljs-built_in">&lt;/li&gt;</span>
+<span class="hljs-built_in">&lt;/ul&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>The nested list has to be a child of the li element</p>
+                        <p>You can nest different types of list, too</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;ol&gt;</span>
+    <span class="hljs-built_in">&lt;li&gt;</span> Hello, list! <span class="hljs-built_in">&lt;/li&gt;</span>
+    <span class="hljs-built_in">&lt;li&gt;</span>
+        <span class="hljs-built_in">&lt;ul&gt;</span>
+            <span class="hljs-built_in">&lt;li&gt;</span> Hello, nested list! <span class="hljs-built_in">&lt;/li&gt;</span>
+        <span class="hljs-built_in">&lt;/ul&gt;</span>
+    <span class="hljs-built_in">&lt;/li&gt;</span>
+<span class="hljs-built_in">&lt;/ol&gt;</span>
+</code></pre>
+                        </div>
+
+                        <a href="./htmlLanguage-5Lists.html#DescriptionList" id="DescriptionList"></a>
+                        <h4>Description List</h4>
+                        <p>A description list (or definition list, as it was called before HTML5) can be created with the dl element. It consists of name-value groups, where the name is given in the dt element, and the value is given in the dd element</p>
+                    
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;dl&gt;</span>
+    <span class="hljs-built_in">&lt;dt&gt;</span> name 1 <span class="hljs-built_in">&lt;/dt&gt;</span>
+    <span class="hljs-built_in">&lt;dd&gt;</span> value for 1 <span class="hljs-built_in">&lt;/dd&gt;</span>
+    <span class="hljs-built_in">&lt;dt&gt;</span> name 2 <span class="hljs-built_in">&lt;/dt&gt;</span>
+    <span class="hljs-built_in">&lt;dd&gt;</span> value for 2 <span class="hljs-built_in">&lt;/dd&gt;</span>
+<span class="hljs-built_in">&lt;/dl&gt;</span>
+</code></pre>
+                        </div>
+
+                    </div> 
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer>        
+        <header class="header-footer">
+            <div class="line-section"></div>
+            <div class="container">
+                <div class="flex-container top-footer">
+                    <div> 
+                        <div class="logo">                       
+                            <img src="../../files/Logo.svg" alt="logo">
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Home</h4>
+                    </div>
+                    <div>
+                        <h4>Sign</h4>
+                        <a href="../sign/login.html">Login</a>
+                        <a href="../sign/register.html">Register</a>
+                    </div>
+                    <div>
+                        <h4>Linguages</h4>
+                        <a href="../linguages-Tutorials.html">Tutorials</a>
+                        <a href="../linguages-Courses.html">Courses</a>
+                        <a href="../linguages-Ebook.html">E-books</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="footer-footer">
+            <div class="container ">
+                <div class="flex-container footer-down">
+                    <div>
+                        <nav class="terms">
+                            <a href="../privacy.html">Privacy Police</a>
+                        </nav>
+                    </div>
+                    <div class="logo">
+                        <p>&copy; <span>Code</span>Zone</p>
+                    </div>
+                    <div class="social-div">
+                        <nav class="social-nav">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-github-alt"></i>
+                            </a>
+                        </nav>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

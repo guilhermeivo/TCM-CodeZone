@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <script src="../../scripts/app.js"></script>
+    <title>HTML</title>
+</head>
+<body>
+    <header class="header-navigation">
+        <div class="container">
+            <div class="logo">
+                <img src="../../files/Logo.svg" alt="logo">
+                <h1>CodeZone</h1>
+            </div>
+            <nav>
+                <div>
+                    <a href="../../index.html">Home</a>
+                </div><div>
+                    <a href="">Linguages</a>
+                    <div class="dropdoww">
+                        <a href="../linguages-Tutorials.html">Tutorials</a>
+                        <a href="../linguages-Courses.html">Courses</a>
+                        <a href="../linguages-Ebook.html">e-books</a>
+                    </div>
+                </div><div>
+                    <a href="../sign.html" class="sign">Sign</a>
+                </div>
+            </nav>
+            <div class="hamburguer-icon" onclick="menuResponsive()">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="navigation-responsive">
+                <a href="../../index.html">Home</a>
+                <a href="">Linguages</a> 
+                <div class="dropdoww">
+                    <a href="../linguages-Tutorials.html">Tutorials</a>
+                    <a href="../linguages-Courses.html">Courses</a>
+                    <a href="../linguages-Ebook.html">e-books</a>
+                </div>
+                <a href="../sign.html">Sign</a>
+            </div>
+        </div>
+    </header>
+    <div class="section">
+        <div class="container">
+            <main class="content">
+                <div class="content-title">
+                    <div class="content-banner">
+                        <div class="content-banner__icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="content-banner__body">
+                            <h2>HTML Linguages</h2>
+                        </div>
+                    </div>
+
+                    <div class="content-banner__description">
+                        <p>The HTML programming language can be divided into three main parts: Intruducion, HTMl5, Html others code.</p>
+                    </div>
+                </div>
+                <section class="content-layout row documentation">
+                    <div class="first-column">
+                        <div class="sidebar-nav">
+                            <ul class="documentation-page-nav">
+                                <li class="has-submenu">
+                                    <div class="bullet-icon">
+                                        <span class="icon"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                    <a href="#">
+                                        HTML Tutorial
+                                    </a>
+                                    <ul class="reference-menu">
+                                        <li>
+                                            <a href="./htmlLanguage.html#Introducion">Introducion</a>
+                                        </li>
+                                        <li>
+                                            <a href="./htmlLanguage.html#HTML5">HTML5</a>
+                                        </li>
+                                        <li>
+                                            <a href="./htmlLanguage.html#HTMLCodes">HTML others code</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="bullet-icon">
+                                        <span class="icon"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                    <a href="./htmlLanguage-Glossary.html">
+                                        Glossary
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="licence">
+                                <p>                                    
+                                    Found anything that could be improved? Suggest corrections and new documentation via GitHub.
+                                </p>
+                                <p>                                    
+                                    Questions on how to use Github? Learn everything you need to know in this tutorial.  
+                                </p>
+                            </div>
+                            <div class="update">
+                                <p>
+                                    Last Update: 15/11/2019
+                                </p>
+                                <a href="#">                                    
+                                    Edit this page
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-page"> 
+                    <!--  ███████████████████████████████████████████████████████████████████████████████ 
+                                                        Documentação
+                          ███████████████████████████████████████████████████████████████████████████████ -->
+                        <h3>Tables</h3>
+                        <p>The HTML <span class="special">&lt;table&gt;</span> element allows web authors to display tabular data (such as text, images, links, other tables, etc.) in a two dimensional table with rows and columns of cells.</p>
+                        <br>
+                        <a href="./htmlLanguage-6Tables.html#SimpleTable" id="SimpleTable"></a>
+                        <h4>Simple Table</h4>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;table&gt;</span>
+    <span class="hljs-built_in">&lt;tr&gt;</span>
+        <span class="hljs-built_in">&lt;th&gt;</span> Heading 1/Column 1 <span class="hljs-built_in">&lt;/th&gt;</span>
+        <span class="hljs-built_in">&lt;th&gt;</span> Heading 2/Column 2 <span class="hljs-built_in">&lt;/th&gt;</span>
+    <span class="hljs-built_in">&lt;/tr&gt;</span>
+    <span class="hljs-built_in">&lt;tr&gt;</span>
+        <span class="hljs-built_in">&lt;td&gt;</span> Row 1 Data Column 1 <span class="hljs-built_in">&lt;/td&gt;</span>
+        <span class="hljs-built_in">&lt;td&gt;</span> Row 1 Data Column 2 <span class="hljs-built_in">&lt;/td&gt;</span>
+    <span class="hljs-built_in">&lt;/tr&gt;</span>
+    <span class="hljs-built_in">&lt;tr&gt;</span>
+        <span class="hljs-built_in">&lt;td&gt;</span> Row 2 Data Column 1 <span class="hljs-built_in">&lt;/td&gt;</span>
+        <span class="hljs-built_in">&lt;td&gt;</span> Row 2 Data Column 2 <span class="hljs-built_in">&lt;/td&gt;</span>
+    <span class="hljs-built_in">&lt;/tr&gt;</span>
+<span class="hljs-built_in">&lt;/table&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>This will render a <span class="special">&lt;table&gt;</span> consisting of three total rows (<span class="special">&lt;tr&gt;</span>): one row of header cells (<span class="special">&lt;th&gt;</span>) and two rows of content cells (<span class="special">&lt;td&gt;</span>). <span class="special">&lt;th&gt;</span> elements are tabular headers and <span class="special">&lt;td&gt;</span> elements are tabular data. You can put whatever you want inside a <span class="special">&lt;ts&gt;</span> or <span class="special">&lt;th&gt;</span>.</p>
+
+                        <a href="./htmlLanguage-6Tables.html#SpanningColumnsOrRows" id="SpanningColumnsOrRows"></a>
+                        <h4>Spanning columns or rows</h4>
+                        <p>Table cells can span multiple columns or rows using the colspan and rowspan attributes. These attributes can be applied to <span class="special">&lt;th&gt;</span> and <span class="special">&lt;td&gt;</span> elements.</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;table&gt;</span>
+    <span class="hljs-built_in">&lt;tr&gt;</span>
+        <span class="hljs-built_in">&lt;th&gt;</span> Heading 1/Column 1 <span class="hljs-built_in">&lt;/th&gt;</span>
+        <span class="hljs-built_in">&lt;th&gt;</span> Heading 2/Column 2 <span class="hljs-built_in">&lt;/th&gt;</span>
+    <span class="hljs-built_in">&lt;/tr&gt;</span>
+    <span class="hljs-built_in">&lt;tr&gt;</span>
+        <span class="hljs-built_in">&lt;td</span> colspan="3"<span class="hljs-built_in">&gt;</span> This second row spans all three columns <span class="hljs-built_in">&lt;/td&gt;</span>
+    <span class="hljs-built_in">&lt;/tr&gt;</span>
+    <span class="hljs-built_in">&lt;tr&gt;</span>
+        <span class="hljs-built_in">&lt;td</span> rowspan="2"<span class="hljs-built_in">&gt;</span> Row 1 Data Column 1 <span class="hljs-built_in">&lt;/td&gt;</span>
+        <span class="hljs-built_in">&lt;td&gt;</span> Row 1 Data Column 2 <span class="hljs-built_in">&lt;/td&gt;</span>
+    <span class="hljs-built_in">&lt;/tr&gt;</span>
+    <span class="hljs-built_in">&lt;tr&gt;</span>
+        <span class="hljs-built_in">&lt;td&gt;</span> Row 2 Data Column 1 <span class="hljs-built_in">&lt;/td&gt;</span>
+        <span class="hljs-built_in">&lt;td&gt;</span> Row 2 Data Column 2 <span class="hljs-built_in">&lt;/td&gt;</span>
+    <span class="hljs-built_in">&lt;/tr&gt;</span>
+<span class="hljs-built_in">&lt;/table&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>rowspan = A non-negative integer that specifies the number of rows spanned by a cell. The default value of this attribute is one (1). A value of zero (0) means that the cell will extend from the current row until the last row of the table (<span class="special">&lt;thead&gt;</span>, <span class="special">&lt;tbody&gt;</span>, or <span class="special">&lt;tfoot&gt;</span>).</p>
+                        <p>colspan = A non-negative integer that specifies the number of columns spanned by the current cell. The default
+                            value of this attribute is one (1). A value of zero (0) means that the cell will extend from the current to the last
+                            column of the column group <span class="special">&lt;colgroup&gt;</span> in which the cell is defined.</p>
+
+                        <a href="./htmlLanguage-6Tables.html#ColumnGroups" id="ColumnGroups"></a>
+                        <h4>Column Groups</h4>
+                        <p>Sometimes you may want to apply styling to a column or group of columns. Or for semantic purposes, you may want to group columns together. To do this, use <span class="special">&lt;colgroup&gt;</span> and <span class="special">&lt;col&gt;</span> elements.</p>
+                        <p>The optional <span class="special">&lt;colgroup&gt;</span> tag allows you to group columns together. <span class="special">&lt;colgroup&gt;</span> elements must be child elements of a <span class="special">&lt;table&gt;</span> and must come after any <span class="special">&lt;caption&gt;</span> elements and before any table content (e.g., <span class="special">&lt;tr&gt;</span>, <span class="special">&lt;thead&gt;</span>, <span class="special">&lt;tbody&gt;</span>, etc.).</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;table&gt;</span>
+    <span class="hljs-built_in">&lt;colgroup</span> span="2"<span class="hljs-built_in">&gt;</span> <span class="hljs-built_in">&lt;/colgroup&gt;</span>
+    <span class="hljs-built_in">&lt;colgroup</span> span="2"<span class="hljs-built_in">&gt;</span> <span class="hljs-built_in">&lt;/colgroup&gt;</span>
+    ...
+<span class="hljs-built_in">&lt;/table&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>The optional <span class="special">&lt;col&gt;</span> tag allows you to reference individual columns or a range of columns without applying a logical grouping. <span class="special">&lt;col&gt;</span> elements are optional, but if present, they must be inside a <span class="special">&lt;colgroup&gt;</span> element.</p>
+
+                    </div> 
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer>        
+        <header class="header-footer">
+            <div class="line-section"></div>
+            <div class="container">
+                <div class="flex-container top-footer">
+                    <div> 
+                        <div class="logo">                       
+                            <img src="../../files/Logo.svg" alt="logo">
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Home</h4>
+                    </div>
+                    <div>
+                        <h4>Sign</h4>
+                        <a href="../sign/login.html">Login</a>
+                        <a href="../sign/register.html">Register</a>
+                    </div>
+                    <div>
+                        <h4>Linguages</h4>
+                        <a href="../linguages-Tutorials.html">Tutorials</a>
+                        <a href="../linguages-Courses.html">Courses</a>
+                        <a href="../linguages-Ebook.html">E-books</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="footer-footer">
+            <div class="container ">
+                <div class="flex-container footer-down">
+                    <div>
+                        <nav class="terms">
+                            <a href="../privacy.html">Privacy Police</a>
+                        </nav>
+                    </div>
+                    <div class="logo">
+                        <p>&copy; <span>Code</span>Zone</p>
+                    </div>
+                    <div class="social-div">
+                        <nav class="social-nav">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-github-alt"></i>
+                            </a>
+                        </nav>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

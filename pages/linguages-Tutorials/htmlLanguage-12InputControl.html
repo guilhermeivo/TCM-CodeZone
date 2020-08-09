@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <script src="../../scripts/app.js"></script>
+    <title>HTML</title>
+</head>
+<body>
+    <header class="header-navigation">
+        <div class="container">
+            <div class="logo">
+                <img src="../../files/Logo.svg" alt="logo">
+                <h1>CodeZone</h1>
+            </div>
+            <nav>
+                <div>
+                    <a href="../../index.html">Home</a>
+                </div><div>
+                    <a href="">Linguages</a>
+                    <div class="dropdoww">
+                        <a href="../linguages-Tutorials.html">Tutorials</a>
+                        <a href="../linguages-Courses.html">Courses</a>
+                        <a href="../linguages-Ebook.html">e-books</a>
+                    </div>
+                </div><div>
+                    <a href="../sign.html" class="sign">Sign</a>
+                </div>
+            </nav>
+            <div class="hamburguer-icon" onclick="menuResponsive()">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="navigation-responsive">
+                <a href="../../index.html">Home</a>
+                <a href="">Linguages</a> 
+                <div class="dropdoww">
+                    <a href="../linguages-Tutorials.html">Tutorials</a>
+                    <a href="../linguages-Courses.html">Courses</a>
+                    <a href="../linguages-Ebook.html">e-books</a>
+                </div>
+                <a href="../sign.html">Sign</a>
+            </div>
+        </div>
+    </header>
+    <div class="section">
+        <div class="container">
+            <main class="content">
+                <div class="content-title">
+                    <div class="content-banner">
+                        <div class="content-banner__icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="content-banner__body">
+                            <h2>HTML Linguages</h2>
+                        </div>
+                    </div>
+
+                    <div class="content-banner__description">
+                        <p>The HTML programming language can be divided into three main parts: Intruducion, HTMl5, Html others code.</p>
+                    </div>
+                </div>
+                <section class="content-layout row documentation">
+                    <div class="first-column">
+                        <div class="sidebar-nav">
+                            <ul class="documentation-page-nav">
+                                <li class="has-submenu">
+                                    <div class="bullet-icon">
+                                        <span class="icon"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                    <a href="#">
+                                        HTML Tutorial
+                                    </a>
+                                    <ul class="reference-menu">
+                                        <li>
+                                            <a href="./htmlLanguage.html#Introducion">Introducion</a>
+                                        </li>
+                                        <li>
+                                            <a href="./htmlLanguage.html#HTML5">HTML5</a>
+                                        </li>
+                                        <li>
+                                            <a href="./htmlLanguage.html#HTMLCodes">HTML others code</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="bullet-icon">
+                                        <span class="icon"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                    <a href="./htmlLanguage-Glossary.html">
+                                        Glossary
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="licence">
+                                <p>                                    
+                                    Found anything that could be improved? Suggest corrections and new documentation via GitHub.
+                                </p>
+                                <p>                                    
+                                    Questions on how to use Github? Learn everything you need to know in this tutorial.  
+                                </p>
+                            </div>
+                            <div class="update">
+                                <p>
+                                    Last Update: 15/11/2019
+                                </p>
+                                <a href="#">                                    
+                                    Edit this page
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-page"> 
+                    <!--  ███████████████████████████████████████████████████████████████████████████████ 
+                                                        Documentação
+                          ███████████████████████████████████████████████████████████████████████████████ -->
+                        <h3>Input Control Elements</h3>
+                        <p>A key component of interactive web systems, input tags are HTML elements designed to take a specific form of input from users. Different types of input elements can regulate the data entered to fit a specified format and provide security to password entry.</p>
+                        <br>
+                        <a href="./htmlLanguage-12InputControl.html#Text" id="Text"></a>
+                        <h4> Text </h4>
+                        <p>The most basic input type and the default input if no type is specified. This input type defines a single-line text field with line-breaks automatically removed from the input value. All other characters can be entered into this. <span class="special">&lt;input&gt;</span> elements are used within a <span class="special">&lt;form&gt;</span> element to declare input controls that allow users to input data.</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;input</span> type="text"<span class="hljs-built_in">&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>or (without specifying a type, using the default attribute):</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;input&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>The default width of a text field input is 20 characters. This can be changed by specifying a value for the size attribute like this:</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;input</span> type="text" size="50"<span class="hljs-built_in">&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>The size attribute is distinctly different than setting a width with CSS. Using a width defines a specific value (in number of pixel, percentage of the parent element, etc.) that the input must always be wide. Using the size calculates the amount of width to allocate based on the font being used and how wide the characters normally are.</p>
+                        <p><b>Note:</b> Using the size attribute does not inherently limit the number of characters which can be entered into the box, only how wide the box is displayed. For limiting the length, see Input Validation.</p>
+                        <p>An input field only allows one line of text. If you need a multi-line text input for substantial amount of text, use a <span class="special">&lt;textarea&gt;</span> element instead.</p>
+
+                        <a href="./htmlLanguage-12InputControl.html#Checkbox" id="Checkbox"></a>
+                        <h4> Checkbox </h4>
+                        <p>Checkboxes and radio buttons are written with the HTML tag <span class="special">&lt;input&gt;</span>, and their behavior is defined in the HTML specification.</p>
+                        <p>The simplest checkbox or radio button is an <span class="special">&lt;input&gt;</span> element with a type attribute of checkbox or radio, respectively:</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;input</span> type="checkbox"<span class="hljs-built_in">&gt;</span>
+<span class="hljs-built_in">&lt;input</span> type="radio"<span class="hljs-built_in">&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>A single stand-alone checkbox element is used for a single binary option such as a yes-or-no question. Checkboxes are independent, meaning the user may select as many choices as they would like in a group of checkboxes. In other words, checking one checkbox does not uncheck the other checkboxes in checkbox group.</p>
+                        <p>Radio buttons usually come in groups (if it's not grouped with another radio button, you probably meant to use a checkbox instead) identified by using the same name attribute on all buttons within that group. The selection of radio buttons are mutually exclusive, meaning the user may only select one choice from a group of radio buttons. When a radio button is checked, any other radio button with the same name that was previously checked becomes unchecked.</p>
+                        <p>Example:</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;input</span> type="radio" name="color" id="red" value="#F00"<span class="hljs-built_in">&gt;</span>
+<span class="hljs-built_in">&lt;input</span> type="radio" name="color" id="green" value="#0F0"<span class="hljs-built_in">&gt;</span>
+<span class="hljs-built_in">&lt;input</span> type="radio" name="color" id="blue" value="#00F<span class="hljs-built_in">&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>When viewed, radio buttons appear as a circle (unchecked) or a filled circle (checked). Checkboxes appear as a square (unchecked) or a filled square (checked). Depending on the browser and operating system, the square sometimes has rounded corners</p>
+                        <p>Attributes checkboxes and radio buttons have a number of attributes to control their behavior:</p>
+                        <p>Value</p>
+                        <p>Like any other input element, the value attribute specifies the string value to associate with the button in the event of form submission. However, checkboxes and radio buttons are special in that when the value is omitted, it defaults to on when submitted, rather than sending a blank value. The value attribute is not reflected in the button's appearance.</p>
+                        <p>The checked attribute specifies the initial state of a checkbox or radio button. This is a boolean attribute and may be omitted.</p>
+                        <p>Each of these are valid, equivalent ways to define a checked radio button:</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;input</span> checked<span class="hljs-built_in">&gt;</span>
+<span class="hljs-built_in">&lt;input</span> checked=""<span class="hljs-built_in">&gt;</span>
+<span class="hljs-built_in">&lt;input</span> checked=""<span class="hljs-built_in">&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>The absence of the checked attribute is the only valid syntax for an unchecked button:</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;input</span> type="radio"<span class="hljs-built_in">&gt;</span>
+<span class="hljs-built_in">&lt;input</span> type="checkbox"<span class="hljs-built_in">&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>When resetting a <span class="special">&lt;form&gt;</span>, checkboxes and radio buttons revert to the state of their checked attribute</p>
+                        <p>To give context to the buttons and show users what each button is for, each of them should have a label. This can be done using a <span class="special">&lt;label&gt;</span> element to wrap the button. Also, this makes the label clickable, so you select the corresponding button.</p>
+                        <p>Example:</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;label&gt;</span>
+    <span class="hljs-built_in">&lt;input</span> type="radio" name="color" value="#F00"<span class="hljs-built_in">&gt;</span>
+    red
+<span class="hljs-built_in">&lt;/label&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>or with a <span class="special">&lt;label&gt;</span> element with a for attribute set to the id attribute of the button:</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;input</span> type="checkbox" name="color" value="#F00" id="red"<span class="hljs-built_in">&gt;</span>
+<span class="hljs-built_in">&lt;label</span> for="red"<span class="hljs-built_in">&gt;</span> Red <span class="hljs-built_in">&lt;/label&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>Checkboxes can also be grouped in a similar fashion, with a fieldset and legend identifying the group of related checkboxes. However, keep in mind that checkboxes should not share the same name because they are not mutually exclusive. Doing this will result in the form submitting multiple values for the same key and not all serverside languages handle this in the same way (undefined behavior). Each checkbox should either have a unique name, or use a set of square brackets ([]) to indicate that the form should submit an array of values for that key. Which method you choose should depend on how you plan to handle the form data client-side or server-side. You should also keep the legend short, since some combinations of browsers and screen readers read the legend before each input field in the fieldset.</p>
+
+                        <a href="./htmlLanguage-12InputControl.html#Color" id="Color"></a>
+                        <h4> Color </h4>
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;input</span> type="color" name="favcolor" value="#ff0000"<span class="hljs-built_in">&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>In supporting browsers, the input element with a type attribute whose value is color creates a button-like control, with a color equal to the value of color attribute (defaults to black if value is not specified or is an invalid hexadecimal format).</p>
+                        <div class="content-description__img imgLanguage2">
+                            <img src="http://i.stack.imgur.com/aIvlb.png" alt="">
+                        </div>
+                        <p>Clicking this button opens the operating system's color widget, which allows user to select a colos</p>
+                        <div class="content-description__img imgLanguage3">
+                            <img src="http://i.stack.imgur.com/cCZxo.jpg" alt="">
+                        </div>
+                        <p>Fallback for browsers which do not support this input type is a regular input type=text</p>
+                    </div> 
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer>        
+        <header class="header-footer">
+            <div class="line-section"></div>
+            <div class="container">
+                <div class="flex-container top-footer">
+                    <div> 
+                        <div class="logo">                       
+                            <img src="../../files/Logo.svg" alt="logo">
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Home</h4>
+                    </div>
+                    <div>
+                        <h4>Sign</h4>
+                        <a href="../sign/login.html">Login</a>
+                        <a href="../sign/register.html">Register</a>
+                    </div>
+                    <div>
+                        <h4>Linguages</h4>
+                        <a href="../linguages-Tutorials.html">Tutorials</a>
+                        <a href="../linguages-Courses.html">Courses</a>
+                        <a href="../linguages-Ebook.html">E-books</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="footer-footer">
+            <div class="container ">
+                <div class="flex-container footer-down">
+                    <div>
+                        <nav class="terms">
+                            <a href="../privacy.html">Privacy Police</a>
+                        </nav>
+                    </div>
+                    <div class="logo">
+                        <p>&copy; <span>Code</span>Zone</p>
+                    </div>
+                    <div class="social-div">
+                        <nav class="social-nav">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-github-alt"></i>
+                            </a>
+                        </nav>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

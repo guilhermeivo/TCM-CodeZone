@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <script src="../../scripts/app.js"></script>
+    <title>HTML e CSS Projete e Construa Websites</title>
+</head>
+<body>
+    <header class="header-navigation">
+        <div class="container">
+            <div class="logo">
+                <img src="../../files/Logo.svg" alt="logo">
+                <h1>CodeZone</h1>
+            </div>
+            <nav>
+                <div>
+                    <a href="../../index.html">Home</a>
+                </div><div>
+                    <a href="">Linguages</a>
+                    <div class="dropdoww">
+                        <a href="../linguages-Tutorials.html">Tutorials</a>
+                        <a href="../linguages-Courses.html">Courses</a>
+                        <a href="../linguages-Ebook.html">e-books</a>
+                    </div>
+                </div><div>
+                    <a href="../sign.html" class="sign">Sign</a>
+                </div>
+            </nav>
+            <div class="hamburguer-icon" onclick="menuResponsive()">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="navigation-responsive">
+                <a href="../../index.html">Home</a>
+                <a href="">Linguages</a> 
+                <div class="dropdoww">
+                    <a href="../linguages-Tutorials.html">Tutorials</a>
+                    <a href="../linguages-Courses.html">Courses</a>
+                    <a href="../linguages-Ebook.html">e-books</a>
+                </div>
+                <a href="../sign.html">Sign</a>
+            </div>
+        </div>
+    </header>
+    <div class="section">
+        <div class="container">
+            <main class="content">
+                <div class="content-title">
+                    <div class="content-banner">
+                        <div class="content-banner__body">
+                            <h2>Responsive Layout Grid</h2>
+                        </div>
+                    </div>
+                    <div class="content-banner__description">
+                        <p>15/11/2019</p>
+                    </div>
+                </div>
+                <section class="content-layout">
+                    <div class="content-description">
+                        <h3>Columns, gutters, and margins </h3>
+                        <p>The Material Design layout grid is made up of three elements: columns, gutters, and margins.</p>
+                        <div class="content-description__img">
+                            <img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1P_b7NIZ5_IBvs9VraJx7tu8KO-dUZXJW%2Flayout-responsive-columns-margins-gutters.png" alt="">
+                        </div>  
+                        <h4>Columns</h4>      
+                        <p>Content is placed in the areas of the screen that contain columns.</p>
+                        <p>Column width is defined using percentages, rather than fixed values, to allow content to flexibly adapt to any screen size. The number of columns displayed in the grid is determined by the breakpoint range (a range of predetermined screen sizes) at which a screen is viewed, whether it’s a breakpoint for mobile, tablet, or another size.</p>                
+                        <div class="content-description__img">
+                            <img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1XzRkl-dQpZybJMje81knhzgS24kQkBns%2Flayout-responsive-columns-360.png" alt="">
+                        </div>
+                        <div class="content-description__img">
+                            <img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1HvKFIQPbDzU3NMF_ww5lvbHilht1bmoi%2Flayout-responsive-columns-600.png" alt="">
+                        </div>
+                        <h4>Gutters</h4>
+                        <p>Gutters are the spaces between columns. They help separate content.</p>
+                        <p>Gutter widths are fixed values at each breakpoint range. To better adapt to the screen, gutter width can change at different breakpoints. Wider gutters are more appropriate for larger screens, as they create more whitespace between columns.</p>
+                        <div class="content-description__img">
+                            <img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1X3yLriF6STNMsF_J-G-lPqqWxEsjSGeA%2Flayout-responsive-gutters-360.png" alt="">
+                        </div>
+                        <div class="content-description__img">
+                            <img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1SRIW3KwxGPkJk4INc3OZM_3ZBEPOjbYg%2Flayout-responsive-gutters-600.png" alt="">
+                        </div>
+                        <h4>Margins</h4>
+                        <p>Margins are the space between content and the left and right edges of the screen.</p>
+                        <p>Margin widths are defined as fixed values at each breakpoint range. To better adapt to the screen, the margin width can change at different breakpoints. Wider margins are more appropriate for larger screens, as they create more whitespace around the perimeter of content.</p>
+                        <div class="content-description__img">
+                            <img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1KEfrUmIS_cTjLcQdgmkI6ISccOmF0jMd%2Flayout-responsive-margins-360.png" alt="">
+                        </div>
+                        <div class="content-description__img">
+                            <img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1-LhM4V-ShSU_5aGH7vWEjnLHmizNhAuA%2Flayout-responsive-margins-600.png" alt="">
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer>        
+        <header class="header-footer">
+            <div class="line-section"></div>
+            <div class="container">
+                <div class="flex-container top-footer">
+                    <div> 
+                        <div class="logo">                       
+                            <img src="../../files/Logo.svg" alt="logo">
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Home</h4>
+                    </div>
+                    <div>
+                        <h4>Sign</h4>
+                        <a href="../sign/login.html">Login</a>
+                        <a href="../sign/register.html">Register</a>
+                    </div>
+                    <div>
+                        <h4>Linguages</h4>
+                        <a href="../linguages-Tutorials.html">Tutorials</a>
+                        <a href="../linguages-Courses.html">Courses</a>
+                        <a href="../linguages-Ebook.html">E-books</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="footer-footer">
+            <div class="container ">
+                <div class="flex-container footer-down">
+                    <div>
+                        <nav class="terms">
+                            <a href="../privacy.html">Privacy Police</a>
+                            <a href="../about.html">About</a>
+                        </nav>
+                    </div>
+                    <div class="logo">
+                        <p>&copy; <span>Code</span>Zone ❤️</p>
+                    </div>
+                    <div class="social-div">
+                        <nav class="social-nav">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-github-alt"></i>
+                            </a>
+                        </nav>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

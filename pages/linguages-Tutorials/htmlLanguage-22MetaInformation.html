@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <script src="../../scripts/app.js"></script>
+    <title>HTML</title>
+</head>
+<body>
+    <header class="header-navigation">
+        <div class="container">
+            <div class="logo">
+                <img src="../../files/Logo.svg" alt="logo">
+                <h1>CodeZone</h1>
+            </div>
+            <nav>
+                <div>
+                    <a href="../../index.html">Home</a>
+                </div><div>
+                    <a href="">Linguages</a>
+                    <div class="dropdoww">
+                        <a href="../linguages-Tutorials.html">Tutorials</a>
+                        <a href="../linguages-Courses.html">Courses</a>
+                        <a href="../linguages-Ebook.html">e-books</a>
+                    </div>
+                </div><div>
+                    <a href="../sign.html" class="sign">Sign</a>
+                </div>
+            </nav>
+            <div class="hamburguer-icon" onclick="menuResponsive()">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="navigation-responsive">
+                <a href="../../index.html">Home</a>
+                <a href="">Linguages</a> 
+                <div class="dropdoww">
+                    <a href="../linguages-Tutorials.html">Tutorials</a>
+                    <a href="../linguages-Courses.html">Courses</a>
+                    <a href="../linguages-Ebook.html">e-books</a>
+                </div>
+                <a href="../sign.html">Sign</a>
+            </div>
+        </div>
+    </header>
+    <div class="section">
+        <div class="container">
+            <main class="content">
+                <div class="content-title">
+                    <div class="content-banner">
+                        <div class="content-banner__icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="content-banner__body">
+                            <h2>HTML Linguages</h2>
+                        </div>
+                    </div>
+
+                    <div class="content-banner__description">
+                        <p>The HTML programming language can be divided into three main parts: Intruducion, HTMl5, Html others code.</p>
+                    </div>
+                </div>
+                <section class="content-layout row documentation">
+                    <div class="first-column">
+                        <div class="sidebar-nav">
+                            <ul class="documentation-page-nav">
+                                <li class="has-submenu">
+                                    <div class="bullet-icon">
+                                        <span class="icon"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                    <a href="#">
+                                        HTML Tutorial
+                                    </a>
+                                    <ul class="reference-menu">
+                                        <li>
+                                            <a href="./htmlLanguage.html#Introducion">Introducion</a>
+                                        </li>
+                                        <li>
+                                            <a href="./htmlLanguage.html#HTML5">HTML5</a>
+                                        </li>
+                                        <li>
+                                            <a href="./htmlLanguage.html#HTMLCodes">HTML others code</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="bullet-icon">
+                                        <span class="icon"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                    <a href="./htmlLanguage-Glossary.html">
+                                        Glossary
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="licence">
+                                <p>                                    
+                                    Found anything that could be improved? Suggest corrections and new documentation via GitHub.
+                                </p>
+                                <p>                                    
+                                    Questions on how to use Github? Learn everything you need to know in this tutorial.  
+                                </p>
+                            </div>
+                            <div class="update">
+                                <p>
+                                    Last Update: 15/11/2019
+                                </p>
+                                <a href="#">                                    
+                                    Edit this page
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-page"> 
+                    <!--  ███████████████████████████████████████████████████████████████████████████████ 
+                                                        Documentação
+                          ███████████████████████████████████████████████████████████████████████████████ -->
+                        <h3>Meta Information</h3>
+                        <p>Meta tags in HTML documents provide useful information about the document including a description, keywords, author, dates of modifications and around 90 other fields. This topic covers the usage and purpose of these tags.</p>
+                        <br>
+                        <a href="./htmlLanguage-22MetaInformation.html#PageInformation" id="PageInformation"></a>
+                        <h4> Page Information </h4>
+                        <p>Giving the name of the Web application that the page represents.</p>
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;meta</span> name="application-name" content="OpenStreetMap"<span class="hljs-built_in">&gt;</span>
+</code></pre>
+                        </div>
+                        <p>If it’s not a Web application, the application-name meta tag must not be used</p>
+                        <p>Set the author of the page:</p>
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;meta</span> name="author" content="Your Name"<span class="hljs-built_in">&gt;</span>
+</code></pre>
+                        </div>
+                        <p>Only one name can be given</p>
+                        <p>Set the description of the page:</p>
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;meta</span> name="description" content="Page Description"<span class="hljs-built_in">&gt;</span>
+</code></pre>
+                        </div>
+                        <p>The description meta tag can be used by various search engines while indexing your web page for searching purpose. Usually, the description contained within the meta tag is the short summary that shows up under the page/website's main title in the search engine results. Google usually uses only the first 20-25 words of your description.</p>
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;meta</span> name="generator" content="HTML Generator 1.42"<span class="hljs-built_in">&gt;</span>
+</code></pre>
+                        </div>
+                        <p>Identifies one of the software packages used to generate the document. Only to be used for pages where the markup is automatically generated.</p>
+                        <p>Set keywords for search engines (comma-separated):</p>
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;meta</span> name="keywords" content="Keyword1, Keyword2"<span class="hljs-built_in">&gt;</span>
+</code></pre>
+                        </div>
+                        <p>The keywords meta tag is sometimes used by search engines to know the search query which is relevant to your web page.</p>
+                        <p>As a rule of thumb, it is probably a good idea to not add too many words, as most search engines that use this meta tag for indexing will only index the first ~20 words. Make sure that you put the most important keywords first.</p>
+
+                        <a href="./htmlLanguage-22MetaInformation.html#CharacterEncoding" id="CharacterEncoding"></a>
+                        <h4> Character Encoding </h4>
+                        <p>The charset attribute specifies the character encoding for the HTML document and needs to be a valid character encoding (examples include windows-1252, ISO-8859-2, Shift_JIS, and UTF-8). UTF-8 (Unicode) is the most widely used and should be used for any new project</p>
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;meta</span> charset="UTF-8"<span class="hljs-built_in">&gt;</span>
+<span class="hljs-built_in">&lt;meta</span> charset="ISO-8859-1"<span class="hljs-built_in">&gt;</span>
+</code></pre>
+                        </div>
+                        <p>All browsers have always recognized the <span class="special">&lt;meta charset&gt;</span> form, but if you for some reason need your page to be valid HTML 4.01, you can use the following instead:</p>
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;meta</span> http-equiv="content-type" content="text/html; charset=UTF-8"<span class="hljs-built_in">&gt;</span>
+<span class="hljs-built_in">&lt;meta</span> http-equiv="content-type" content="text/html; charset=ISO-8859-1"<span class="hljs-built_in">&gt;</span>
+</code></pre>
+                        </div>
+                        <p>See also the Encoding Standard, to view all available character encoding labels that browsers recognize.</p>
+
+                        <a href="./htmlLanguage-22MetaInformation.html#Robots" id="Robots"></a>
+                        <h4> Robots </h4>
+                        <p>The robots attribute, supported by several major search engines, controls whether search engine spiders are allowed to index a page or not and whether they should follow links from a page or not.</p>
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;meta</span> name="robots" content="noindex"<span class="hljs-built_in">&gt;</span>
+</code></pre>
+                        </div>
+                        <p>This example instructs all search engines to not show the page in search results. Other allowed values are:</p>
+                        <p><b>Note:</b> Explicitly defining index and/or follow, while valid values, is not necessary as pretty much all search engines will assume they are allowed to do so if not explicitly prevented from doing so. Similar to how the robots.txt file operates, search engines generally only look for things they are not allowed to do. Only stating things a search engine isn't allowed to do also prevents accidentally stating opposites (such as index, ..., noindex) which not all search engines will treat in the same way.</p>
+
+                        <a href="./htmlLanguage-22MetaInformation.html#SocialMedia" id="SocialMedia"></a>
+                        <h4> Social Media </h4>
+                        <p>Open Graph is a standard for metadata that extends the normal information contained within a site's head markup. This enables websites such as Facebook to display deeper and richer information about a website in a structured format. This information is then automatically displayed when users share links to websites containing OG metadata on Facebook.</p>
+
+                    </div> 
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer>        
+        <header class="header-footer">
+            <div class="line-section"></div>
+            <div class="container">
+                <div class="flex-container top-footer">
+                    <div> 
+                        <div class="logo">                       
+                            <img src="../../files/Logo.svg" alt="logo">
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Home</h4>
+                    </div>
+                    <div>
+                        <h4>Sign</h4>
+                        <a href="../sign/login.html">Login</a>
+                        <a href="../sign/register.html">Register</a>
+                    </div>
+                    <div>
+                        <h4>Linguages</h4>
+                        <a href="../linguages-Courses.html">Courses</a>
+                        <a href="../linguages-Ebook.html">E-books</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="footer-footer">
+            <div class="container ">
+                <div class="flex-container footer-down">
+                    <div>
+                        <nav class="terms">
+                            <a href="../tems.html">Terms & Conditions</a>
+                            <a href="../privacy.html">Privacy Police</a>
+                        </nav>
+                    </div>
+                    <div class="logo">
+                        <p>&copy; <span>Code</span>Zone</p>
+                    </div>
+                    <div class="social-div">
+                        <nav class="social-nav">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-github-alt"></i>
+                            </a>
+                        </nav>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

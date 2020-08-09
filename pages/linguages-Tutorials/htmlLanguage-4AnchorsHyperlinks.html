@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <script src="../../scripts/app.js"></script>
+    <title>HTML</title>
+</head>
+<body>
+    <header class="header-navigation">
+        <div class="container">
+            <div class="logo">
+                <img src="../../files/Logo.svg" alt="logo">
+                <h1>CodeZone</h1>
+            </div>
+            <nav>
+                <div>
+                    <a href="../../index.html">Home</a>
+                </div><div>
+                    <a href="">Linguages</a>
+                    <div class="dropdoww">
+                        <a href="../linguages-Tutorials.html">Tutorials</a>
+                        <a href="../linguages-Courses.html">Courses</a>
+                        <a href="../linguages-Ebook.html">e-books</a>
+                    </div>
+                </div><div>
+                    <a href="../sign.html" class="sign">Sign</a>
+                </div>
+            </nav>
+            <div class="hamburguer-icon" onclick="menuResponsive()">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="navigation-responsive">
+                <a href="../../index.html">Home</a>
+                <a href="">Linguages</a> 
+                <div class="dropdoww">
+                    <a href="../linguages-Tutorials.html">Tutorials</a>
+                    <a href="../linguages-Courses.html">Courses</a>
+                    <a href="../linguages-Ebook.html">e-books</a>
+                </div>
+                <a href="../sign.html">Sign</a>
+            </div>
+        </div>
+    </header>
+    <div class="section">
+        <div class="container">
+            <main class="content">
+                <div class="content-title">
+                    <div class="content-banner">
+                        <div class="content-banner__icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="content-banner__body">
+                            <h2>HTML Linguages</h2>
+                        </div>
+                    </div>
+
+                    <div class="content-banner__description">
+                        <p>The HTML programming language can be divided into three main parts: Intruducion, HTMl5, Html others code.</p>
+                    </div>
+                </div>
+                <section class="content-layout row documentation">
+                    <div class="first-column">
+                        <div class="sidebar-nav">
+                            <ul class="documentation-page-nav">
+                                <li class="has-submenu">
+                                    <div class="bullet-icon">
+                                        <span class="icon"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                    <a href="#">
+                                        HTML Tutorial
+                                    </a>
+                                    <ul class="reference-menu">
+                                        <li>
+                                            <a href="./htmlLanguage.html#Introducion">Introducion</a>
+                                        </li>
+                                        <li>
+                                            <a href="./htmlLanguage.html#HTML5">HTML5</a>
+                                        </li>
+                                        <li>
+                                            <a href="./htmlLanguage.html#HTMLCodes">HTML others code</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="bullet-icon">
+                                        <span class="icon"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                    <a href="./htmlLanguage-Glossary.html">
+                                        Glossary
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="licence">
+                                <p>                                    
+                                    Found anything that could be improved? Suggest corrections and new documentation via GitHub.
+                                </p>
+                                <p>                                    
+                                    Questions on how to use Github? Learn everything you need to know in this tutorial.  
+                                </p>
+                            </div>
+                            <div class="update">
+                                <p>
+                                    Last Update: 15/11/2019
+                                </p>
+                                <a href="#">                                    
+                                    Edit this page
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-page"> 
+                    <!--  ███████████████████████████████████████████████████████████████████████████████ 
+                                                        Documentação
+                          ███████████████████████████████████████████████████████████████████████████████ -->
+                        <h3>Anchors and Hyperlinks</h3>
+                        <p>Anchor tags are commonly used to link separate webpages, but they can also be used to link between different places in a single document, often within table of contents or even launch external applications. This topic explains the implementation and application of HTML anchor tags in various roles.</p>
+                        <br>
+                        <a href="./htmlLanguage-4AnchorsHyperlinks.html#LinkAnother" id="LinkAnother"></a>
+                        <h4>Link to another site</h4>
+                        <p>This is the basic use of the <span class="special">&lt;a&gt;</span> (anchor element) element:</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;a</span> href="http://example.com/"<span class="hljs-built_in">&gt;</span> Link to example.com <span class="hljs-built_in">&lt;/a&gt;</span>
+</code></pre>
+                        </div>
+                        
+                        <p>It creates a hyperlink, to the URL http://example.com/ as specified by the href (hypertext reference) attribute, with the anchor text "Link to example.com". It would look something like the following</p>
+                        <p>To denote that this link leads to an external website, you can use the external link type:</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;a</span> href="http://example.com/" rel="external"<span class="hljs-built_in">&gt;</span> example site <span class="hljs-built_in">&lt;/a&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>You can link to a site that uses a protocol other than HTTP. For example, to link to an FTP site, you can do,</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;a</span> href=""ftp://example.com/"<span class="hljs-built_in">&gt;</span> This could be a link to a FTP site <span class="hljs-built_in">&lt;/a&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>In this case, the difference is that this anchor tag is requesting that the user's browser connect to example.com using the File Transfer Protocol (FTP) rather than the Hypertext Transfer Protocol (HTTP).</p>
+
+                        <a href="./htmlLanguage-4AnchorsHyperlinks.html#LinkAnchor" id="LinkAnchor"></a>
+                        <h4>Link to an anchor</h4>
+                        <p>Anchors can be used to jump to specific tags on an HTML page. The <span class="special">&lt;a&gt;</span> tag can point to any element that has an id attribute. To learn more about IDs, visit the documentation about Classes and IDs. Anchors are mostly used to jump to a subsection of a page and are used in conjunction with header tags.</p>
+                        <p>Suppose you've created a page (page1.html) on many topics:</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;h2&gt;</span> First topic <span class="hljs-built_in">&lt;/h2&gt;</span>
+<span class="hljs-built_in">&lt;p&gt;</span> Content about the first topic <span class="hljs-built_in">&lt;/p&gt;</span>
+<span class="hljs-built_in">&lt;h2&gt;</span> Second topic <span class="hljs-built_in">&lt;/h2&gt;</span>
+<span class="hljs-built_in">&lt;p&gt;</span> Content about the Second topic <span class="hljs-built_in">&lt;/p&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>Once you have several sections, you may want to create a Table of Contents at the top of the page with quick-links (or bookmarks) to specific sections.</p>
+                        <p>If you gave an id attribute to your topics, you could then link to them</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;h2</span> id="Topic1"<span class="hljs-built_in">&gt;</span> First topic <span class="hljs-built_in">&lt;/h2&gt;</span>
+<span class="hljs-built_in">&lt;p&gt;</span> Content about the first topic <span class="hljs-built_in">&lt;/p&gt;</span>
+<span class="hljs-built_in">&lt;h2</span> id="Topic2"<span class="hljs-built_in">&gt;</span> Second topic <span class="hljs-built_in">&lt;/h2&gt;</span>
+<span class="hljs-built_in">&lt;p&gt;</span> Content about the Second topic <span class="hljs-built_in">&lt;/p&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>Now you can use the anchor in your table of contents:</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;h1&gt;</span> Table of Contents <span class="hljs-built_in">&lt;/h1&gt;</span>
+<span class="hljs-built_in">&lt;a</span> href='#Topic1'<span class="hljs-built_in">&gt;</span> Click to jump to the First Topic <span class="hljs-built_in">&lt;/a&gt;</span>
+<span class="hljs-built_in">&lt;a</span> href='#Topic2'<span class="hljs-built_in">&gt;</span> Click to jump to the Second Topic <span class="hljs-built_in">&lt;/a&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>These anchors are also attached to the web page they're on (page1.html). So you can link across the site from one page to the other by referencing the page and anchor name.</p>
+
+                    </div> 
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer>        
+        <header class="header-footer">
+            <div class="line-section"></div>
+            <div class="container">
+                <div class="flex-container top-footer">
+                    <div> 
+                        <div class="logo">                       
+                            <img src="../../files/Logo.svg" alt="logo">
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Home</h4>
+                    </div>
+                    <div>
+                        <h4>Sign</h4>
+                        <a href="../sign/login.html">Login</a>
+                        <a href="../sign/register.html">Register</a>
+                    </div>
+                    <div>
+                        <h4>Linguages</h4>
+                        <a href="../linguages-Tutorials.html">Tutorials</a>
+                        <a href="../linguages-Courses.html">Courses</a>
+                        <a href="../linguages-Ebook.html">E-books</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="footer-footer">
+            <div class="container ">
+                <div class="flex-container footer-down">
+                    <div>
+                        <nav class="terms">
+                            <a href="../privacy.html">Privacy Police</a>
+                        </nav>
+                    </div>
+                    <div class="logo">
+                        <p>&copy; <span>Code</span>Zone</p>
+                    </div>
+                    <div class="social-div">
+                        <nav class="social-nav">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-github-alt"></i>
+                            </a>
+                        </nav>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

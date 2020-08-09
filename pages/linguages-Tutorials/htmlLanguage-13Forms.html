@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <script src="../../scripts/app.js"></script>
+    <title>HTML</title>
+</head>
+<body>
+    <header class="header-navigation">
+        <div class="container">
+            <div class="logo">
+                <img src="../../files/Logo.svg" alt="logo">
+                <h1>CodeZone</h1>
+            </div>
+            <nav>
+                <div>
+                    <a href="../../index.html">Home</a>
+                </div><div>
+                    <a href="">Linguages</a>
+                    <div class="dropdoww">
+                        <a href="../linguages-Tutorials.html">Tutorials</a>
+                        <a href="../linguages-Courses.html">Courses</a>
+                        <a href="../linguages-Ebook.html">e-books</a>
+                    </div>
+                </div><div>
+                    <a href="../sign.html" class="sign">Sign</a>
+                </div>
+            </nav>
+            <div class="hamburguer-icon" onclick="menuResponsive()">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="navigation-responsive">
+                <a href="../../index.html">Home</a>
+                <a href="">Linguages</a> 
+                <div class="dropdoww">
+                    <a href="../linguages-Tutorials.html">Tutorials</a>
+                    <a href="../linguages-Courses.html">Courses</a>
+                    <a href="../linguages-Ebook.html">e-books</a>
+                </div>
+                <a href="../sign.html">Sign</a>
+            </div>
+        </div>
+    </header>
+    <div class="section">
+        <div class="container">
+            <main class="content">
+                <div class="content-title">
+                    <div class="content-banner">
+                        <div class="content-banner__icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="content-banner__body">
+                            <h2>HTML Linguages</h2>
+                        </div>
+                    </div>
+
+                    <div class="content-banner__description">
+                        <p>The HTML programming language can be divided into three main parts: Intruducion, HTMl5, Html others code.</p>
+                    </div>
+                </div>
+                <section class="content-layout row documentation">
+                    <div class="first-column">
+                        <div class="sidebar-nav">
+                            <ul class="documentation-page-nav">
+                                <li class="has-submenu">
+                                    <div class="bullet-icon">
+                                        <span class="icon"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                    <a href="#">
+                                        HTML Tutorial
+                                    </a>
+                                    <ul class="reference-menu">
+                                        <li>
+                                            <a href="./htmlLanguage.html#Introducion">Introducion</a>
+                                        </li>
+                                        <li>
+                                            <a href="./htmlLanguage.html#HTML5">HTML5</a>
+                                        </li>
+                                        <li>
+                                            <a href="./htmlLanguage.html#HTMLCodes">HTML others code</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="bullet-icon">
+                                        <span class="icon"></span>
+                                        <span class="line"></span>
+                                    </div>
+                                    <a href="./htmlLanguage-Glossary.html">
+                                        Glossary
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="licence">
+                                <p>                                    
+                                    Found anything that could be improved? Suggest corrections and new documentation via GitHub.
+                                </p>
+                                <p>                                    
+                                    Questions on how to use Github? Learn everything you need to know in this tutorial.  
+                                </p>
+                            </div>
+                            <div class="update">
+                                <p>
+                                    Last Update: 15/11/2019
+                                </p>
+                                <a href="#">                                    
+                                    Edit this page
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-page"> 
+                    <!--  ███████████████████████████████████████████████████████████████████████████████ 
+                                                        Documentação
+                          ███████████████████████████████████████████████████████████████████████████████ -->
+                        <h3>Forms</h3>
+                        <p>In order to group input elements and submit data, HTML uses a form element to encapsulate input and submission elements. These forms handle sending the data in the specified method to a page handled by a server or handler. This topic explains and demonstrates the usage of HTML forms in collecting and submitting input data</p>
+                        <br>
+                        <a href="./htmlLanguage-13Forms.html#Submitting" id="Submitting"></a>
+                        <h4> Submitting </h4>
+                        <p>The action attribute defines the action to be performed when the form is submitted, which usually leads to a script that collects the information submitted and works with it. if you leave it blank, it will send it to the same file</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;form</span> action="action.php"<span class="hljs-built_in">&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>The method attribute is used to define the HTTP method of the form which is either GET or POST.</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;form</span> action="action.php" method="get"<span class="hljs-built_in">&gt;</span>
+<span class="hljs-built_in">&lt;form</span> action="action.php" method="post"<span class="hljs-built_in">&gt;</span>
+</code></pre>
+                        </div>
+
+                        <p>The GET method is mostly used to get data, for example to receive a post by its ID or name, or to submit a search query. The GET method will append the form data to the URL specified in the action attribute.</p>
+                        <p>The POST method is used when submitting data to a script. The POST method does not append the form data to the action URL but sends using the request body.</p>
+                        <p>To submit the data from the form correctly, a name attribute name must be specified. As an example let's send the value of the field and set its name to lastname:</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;form</span> action="action.php" method="post" target="_blank" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate<span class="hljs-built_in">&gt;</span>
+<span class="hljs-comment">&lt;!-- form elements --&gt;</span>
+<span class="hljs-built_in">&lt;/form&gt;</span>
+</code></pre>
+                        </div>
+
+                        <a href="./htmlLanguage-13Forms.html#UploadingFiles" id="UploadingFiles"></a>
+                        <h4> Uploading Files </h4>
+                        <p>Images and files can be uploaded/submitted to server by setting enctype attribute of form tag to multipart/formdata. enctype specifies how form data would be encoded while submitting to the server.</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;form</span> method="post" enctype="multipart/form-data" action="upload.php"<span class="hljs-built_in">&gt;</span>
+    <span class="hljs-built_in">&lt;input</span> type="file" name="pic"<span class="hljs-built_in">&gt;</span>
+    <span class="hljs-built_in">&lt;input</span> type="submit" value="Upload" <span class="hljs-built_in">&gt;</span>
+<span class="hljs-built_in">&lt;/form&gt;</span>
+</code></pre>
+                        </div>
+
+                        <a href="./htmlLanguage-13Forms.html#InputFields" id="InputFields"></a>
+                        <h4> Grouping a few input fields </h4>
+                        <p>While designing a form, you might like to group a few input fields into a group to help organise the form layout. This can be done by using the tag . Here is an example for using it.</p>
+                        <p>For each fieldset, you can set a legend for the set using the tag LEGEND TEXT</p>
+
+                        <div class="listingblock">
+                            <pre class="highlight">
+<code class="language-html hljs" data-lang="html"><span class="hljs-built_in">&lt;form</span>
+    <span class="hljs-built_in">&lt;fieldset&gt;</span>
+        <span class="hljs-built_in">&lt;legend&gt;</span> 1st field set:<span class="hljs-built_in">&lt;/legend&gt;</span>
+        Field one: <span class="hljs-built_in">&lt;br&gt;</span>
+        <span class="hljs-built_in">&lt;input</span> type="text"<span class="hljs-built_in">&gt;</span><span class="hljs-built_in">&lt;br&gt;</span>
+        Field two: <span class="hljs-built_in">&lt;br&gt;</span>
+        <span class="hljs-built_in">&lt;input</span> type="text"<span class="hljs-built_in">&gt;</span><span class="hljs-built_in">&lt;br&gt;</span>
+    <span class="hljs-built_in">&lt;/fieldset&gt;</span><span class="hljs-built_in">&lt;br&gt;</span>
+    <span class="hljs-built_in">&lt;fieldset&gt;</span>
+        <span class="hljs-built_in">&lt;legend&gt;</span> 2nd field set:<span class="hljs-built_in">&lt;/legend&gt;</span>
+        Field three: <span class="hljs-built_in">&lt;br&gt;</span>
+        <span class="hljs-built_in">&lt;input</span> type="text"<span class="hljs-built_in">&gt;</span><span class="hljs-built_in">&lt;br&gt;</span>
+        Field four: <span class="hljs-built_in">&lt;br&gt;</span>
+        <span class="hljs-built_in">&lt;input</span> type="text"<span class="hljs-built_in">&gt;</span><span class="hljs-built_in">&lt;br&gt;</span>
+    <span class="hljs-built_in">&lt;/fieldset&gt;</span><span class="hljs-built_in">&lt;br&gt;</span>
+    <span class="hljs-built_in">&lt;input</span> type="submit" value="Submit"<span class="hljs-built_in">&gt;</span>
+<span class="hljs-built_in">&lt;/form&gt;</span>
+</code></pre>
+                        </div>
+                    </div> 
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer>        
+        <header class="header-footer">
+            <div class="line-section"></div>
+            <div class="container">
+                <div class="flex-container top-footer">
+                    <div> 
+                        <div class="logo">                       
+                            <img src="../../files/Logo.svg" alt="logo">
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Home</h4>
+                    </div>
+                    <div>
+                        <h4>Sign</h4>
+                        <a href="../sign/login.html">Login</a>
+                        <a href="../sign/register.html">Register</a>
+                    </div>
+                    <div>
+                        <h4>Linguages</h4>
+                        <a href="../linguages-Tutorials.html">Tutorials</a>
+                        <a href="../linguages-Courses.html">Courses</a>
+                        <a href="../linguages-Ebook.html">E-books</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="footer-footer">
+            <div class="container ">
+                <div class="flex-container footer-down">
+                    <div>
+                        <nav class="terms">
+                            <a href="../privacy.html">Privacy Police</a>
+                        </nav>
+                    </div>
+                    <div class="logo">
+                        <p>&copy; <span>Code</span>Zone</p>
+                    </div>
+                    <div class="social-div">
+                        <nav class="social-nav">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-github-alt"></i>
+                            </a>
+                        </nav>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
