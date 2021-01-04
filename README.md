@@ -12,8 +12,8 @@ Projeto foi desenvolvido como forma de trabalho na matéria de Programação Web
 
 - [Layout](#🎨-Layout)
 - [Tecnologias](#computer-tecnologias)
-- [Como rodar o projeto](##construction_worker-como-rodar-o-projeto)
-    - [Baixando o projeto](##computer-baixando-o-projeto)
+- [Como rodar o projeto](#construction_worker-como-rodar-o-projeto)
+    - [Baixando o projeto](#computer-baixando-o-projeto)
     
 ## 🎨 Layout
 
